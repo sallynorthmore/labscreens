@@ -7,6 +7,8 @@ The current site is set to display on a 1080 x 1920 touch screen, using the most
 
 ### Technical Setup
 
+Open index.html in a Chrome browser.
+
 The code is fairly simple. 
 
 It uses: 
