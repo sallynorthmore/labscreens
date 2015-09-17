@@ -34,7 +34,6 @@ $(document).ready(function(){
 
     $('#button').on('click', function(){
         var curVideo = $('.vjs-playing').attr('id');
-        // console.log("Button clicked! Current video: " + curVideo);
 
         // Pause loop
         videojs(curVideo).pause();
@@ -97,6 +96,9 @@ function returnToLoops() {
     loop1.play();
 }
 
+function loopCrossfade() {
+    console.log("loopCrossfade");
+}
 
 /*
     When one loop video finishes, play the other loop
@@ -105,7 +107,7 @@ function returnToLoops() {
 
 loop1.on("ended", function(){
 
-    crossfade();
+    // loopCrossfade();
 
     loop2.currentTime(0);
     loop2.play();
@@ -117,7 +119,7 @@ loop1.on("play", function(){
 
 loop2.on("ended", function(){
 
-    crossfade();
+    // loopCrossfade();
 
     loop1.currentTime(0);
     loop1.play();
