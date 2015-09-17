@@ -39,6 +39,5 @@ For example, if you wish to create a seventh video, copy a <code><video></code> 
 <pre><code>
 <video id="answer07" class="video-js vjs-default-skin video"  preload="auto" width="1080" height="1920" data-setup='{}'>
     <source src="video/answer07.mp4" type='video/mp4' />
-    <p class="vjs-no-js">Your browser does not support the <code>video</code> element.</p>
 </video>
 </pre></code>
