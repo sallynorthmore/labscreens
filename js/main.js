@@ -84,6 +84,7 @@ $('.video-js').not('.loop-video').each(function(){
 	});
 });
 
+
 /*
 	When first loop video is ready, play it
 */
