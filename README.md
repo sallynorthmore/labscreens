@@ -30,14 +30,14 @@ Update the HTML in the <code>index.html</code> file to include any extra video f
 
 If you wish to add or remove answer video files (say you wish to have 3 answer videos instead of the default 6), you will need to update the code in <code>index.html</code> to reflect that.
 
-To *remove* a video, remove the entire <code><video></code> element.
+To *remove* a video, remove the entire <code>&lt;video&rt;</code> element.
 
-To *add* a video, it's easy if you copy and paste an existing <code><video></code> element, updating the *id* and *src* attributes to reflect the new media.
+To *add* a video, it's easy if you copy and paste an existing <code>&lt;video&rt;</code> element, updating the *id* and *src* attributes to reflect the new media.
 
-For example, if you wish to create a seventh video, copy a <code><video></code> element, and then update the html:
+For example, if you wish to create a seventh video, copy a <code>&lt;video&rt;</code> element, and then update the html:
 
 <pre><code>
-<video id="answer07" class="video-js vjs-default-skin video"  preload="auto" width="1080" height="1920" data-setup='{}'>
-    <source src="video/answer07.mp4" type='video/mp4' />
-</video>
+&lt;video id="answer07" class="video-js vjs-default-skin video"  preload="auto" width="1080" height="1920" data-setup='{}'&rt;
+    &lt;source src="video/answer07.mp4" type='video/mp4' /&rt;
+&lt;/video&rt;
 </pre></code>
