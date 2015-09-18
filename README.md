@@ -3,7 +3,7 @@ Video playback for Unruly Lab Screens
 
 ### Technical requirements
 
-The current site is set to display on a 1080 x 1920 touch screen, using the most recent version of Chrome.
+The current site is set to display on a 1080 x 1920 touch screen, using the most recent version of Chrome. Open index.html in your Chrome browser.
 
 ### Technical Setup
 
