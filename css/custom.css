@@ -15,6 +15,7 @@ body {
     position: absolute;
     top: 0;
     width: 1080px;
+    z-index: 400;
 }
 
 #crossfade {
@@ -36,14 +37,13 @@ body {
     z-index: 800;
 }
 
-/* By default, position videos offscreen, add transition delay to allow for crossfade */
+/* By default, position videos offscreen, add transition delay to allow for blackout */
 .video-js {
-    position: absolute;
     height: 100%;
-    width: 100%;
     left: 102%;
-
+    position: absolute;
     transition: all .1s .25s;
+    width: 100%;
 }
 
 /* When video is in playback mode, position it to left corner of screen */
@@ -51,9 +51,29 @@ body {
     left: 0;
 }
 
-/* Remove transitions for any loop videos as there is no crossfade */
+/* Create crossfade on loop videos using opacity and depth */
 .loop-video {
-    transition: all 0s 0s !important;
+    left: 0;
+    opacity: 0;
+    transition: all 1s .25s;
+    z-index: 100;
+}
+
+.loop-video.vjs-playing {
+    opacity: 1;
+    z-index: 200;
+}
+
+.vjs-default-skin .vjs-control-bar {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+
+  -webkit-transition: visibility 0s, opacity 0s;
+     -moz-transition: visibility 0s, opacity 0s;
+      -ms-transition: visibility 0s, opacity 0s;
+       -o-transition: visibility 0s, opacity 0s;
+          transition: visibility 0s, opacity 0s;
 }
 
 /*
