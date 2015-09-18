@@ -55,25 +55,22 @@ body {
 .loop-video {
     left: 0;
     opacity: 0;
-    transition: all 1s .25s;
+    transition: opacity .5s 2s;
     z-index: 100;
 }
 
 .loop-video.vjs-playing {
     opacity: 1;
+    transition: opacity 1.5s .5s;
     z-index: 200;
 }
 
 .vjs-default-skin .vjs-control-bar {
   display: none !important;
-  visibility: hidden !important;
   opacity: 0 !important;
-
   -webkit-transition: visibility 0s, opacity 0s;
-     -moz-transition: visibility 0s, opacity 0s;
-      -ms-transition: visibility 0s, opacity 0s;
-       -o-transition: visibility 0s, opacity 0s;
-          transition: visibility 0s, opacity 0s;
+  transition: visibility 0s, opacity 0s;
+  visibility: hidden !important;
 }
 
 /*
