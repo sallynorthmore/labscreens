@@ -61,7 +61,7 @@ body {
 
 .loop-video.vjs-playing {
     opacity: 1;
-    transition: opacity 1.5s .5s;
+    transition: opacity .5s .5s;
     z-index: 200;
 }
 
